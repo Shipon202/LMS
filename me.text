@@ -1,0 +1,21 @@
+super user
+Username: Rabiul
+password : rabiul
+
+
+http://127.0.0.1:8000/api/token/
+
+user :
+"username" : "shipon"
+"email" : "shipon@gmail.com"
+"role" : "teacher"
+"mobile_no" : "01795099746"
+"password" : "12345"
+
+
+  "id": 3,
+    "username": "himo",
+    "email": "himo@gmail.com",
+    "role": "teacher",
+    "mobile_no": "01795099746"
+     "password": "123456"
