@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-5-%l@#qmi=ngd0^)j5-8etfurg7)9+ic2o4d%)#8g$udiw)vhx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lms-4-qjsz.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'users',
     'core',
     'django_extensions',
+    'corsheaders',
 ]
 
 
@@ -65,6 +68,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'corsheaders.middleware.CorsMiddleware',
+      'django.middleware.common.CommonMiddleware',
 ]
 
 AUTH_USER_MODEL = 'users.User'
