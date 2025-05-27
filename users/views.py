@@ -46,6 +46,9 @@ def user_list_create(request):
 
     elif request.method == 'POST':
         serializer = Userserializer(data=request.data)
+        #***************************
+        print("Incoming data:", request.data) 
+        #***************************
         if serializer.is_valid():
             try:
                 serializer.save()
@@ -53,4 +56,9 @@ def user_list_create(request):
             except Exception as e:
                 return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         else:
+            #***************************
+            print("Serializer Errors:", serializer.errors) 
+            #***************************
+            # 
+            #  
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

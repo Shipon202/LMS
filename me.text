@@ -25,4 +25,15 @@ user :
 
 
 
-     api key = https://lms-1-asa0.onrender.com
+     api key = https://lms-6-gz0f.onrender.com
+
+
+     'corsheaders',
+
+
+
+
+
+     git add lms_backend/settings.py
+git commit -m "Fix: add Render domain to ALLOWED_HOSTS"
+git push
