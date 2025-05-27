@@ -165,3 +165,6 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
 }
 
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
