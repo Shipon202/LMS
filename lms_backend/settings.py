@@ -74,6 +74,13 @@ MIDDLEWARE = [
       'django.middleware.common.CommonMiddleware',
 ]
 
+
+#CORS_ALLOWED_ORIGINS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # or your deployed frontend URL
+]
+
+
 AUTH_USER_MODEL = 'users.User'
 
 ROOT_URLCONF = 'lms_backend.urls'
@@ -158,3 +165,4 @@ SIMPLE_JWT = {
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
 }
+
