@@ -77,7 +77,7 @@ MIDDLEWARE = [
 
 #CORS_ALLOWED_ORIGINS
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # or your deployed frontend URL
+   "http://localhost:5173",  # or your deployed frontend URL
 ]
 
 
