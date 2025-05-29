@@ -34,6 +34,6 @@ user :
 
 
 
-     git add lms_backend/settings.py
+     git add lms_backend/urls.py
 git commit -m "Fix: add Render domain to ALLOWED_HOSTS"
 git push
